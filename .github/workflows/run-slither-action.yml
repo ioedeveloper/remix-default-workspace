@@ -7,6 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
+    - run: npm install
     - uses: crytic/slither-action@v0.2.0
       with:
         target: 'contracts/'
+        slither-args: '--solc-remaps @openzeppelin/contracts=./node_modules/@openzeppelin/contracts'
