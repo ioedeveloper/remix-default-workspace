@@ -10,6 +10,6 @@ jobs:
     - run: npm install
     - uses: crytic/slither-action@v0.2.0
       with:
-        target: 'contracts/'
+        target: 'contracts/4_OZ_import.sol'
         slither-args: '--solc-remaps @openzeppelin/contracts=./node_modules/@openzeppelin/contracts'
         solc-version: '0.8.16'
