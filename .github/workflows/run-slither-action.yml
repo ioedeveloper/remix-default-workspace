@@ -12,4 +12,4 @@ jobs:
       with:
         target: 'contracts/'
         slither-args: '--solc-remaps @openzeppelin/contracts=./node_modules/@openzeppelin/contracts'
-        solc-version: '0.8.0'
+        solc-version: '0.8.2'
