@@ -11,5 +11,5 @@ jobs:
     - uses: crytic/slither-action@v0.2.0
       with:
         target: 'contracts/4_OZ_import.sol'
-        slither-args: '--solc-remaps @openzeppelin/contracts=./node_modules/@openzeppelin/contracts'
+        slither-args: '--solc-remaps @openzeppelin/contracts=./node_modules/@openzeppelin/contracts;hardhat=./node_modules/hardhat'
         fail-on: 'low'
